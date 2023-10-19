@@ -1,0 +1,42 @@
+@mixin iconPosition {
+  position: absolute;
+  top: -66px;
+  left: 114px;
+}
+
+.advantages-list__item {
+  position: relative;
+
+  &:not(:last-child) {
+    padding-bottom: 98px;
+  }
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+}
+
+.advantages-list__title {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.advantages-list__description {
+  margin: 0;
+}
+
+.advantages-list__speed {
+  @include iconPosition();
+}
+
+.advantages-list__convenience {
+  @include iconPosition();
+}
+
+.advantages-list__moxie {
+  @include iconPosition();
+}
+
+.advantages-list__eco {
+  @include iconPosition();
+}

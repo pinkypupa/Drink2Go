@@ -1,0 +1,45 @@
+.user-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  a {
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $basesecondary;
+      outline: none;
+    }
+  }
+}
+
+.user-list__login {
+  width: 16px;
+  height: 16px;
+  padding: 22px;
+  position: absolute;
+  top: -22px;
+  right: 110px;
+
+  span {
+    display: none;
+  }
+}
+
+.user-list__cart {
+  width: 16px;
+  height: 16px;
+  padding: 22px;
+  position: absolute;
+  top: -22px;
+  right: 50px;
+
+  span {
+    display: none;
+  }
+}
+
+.user-list__item {
+  width: min-content;
+}

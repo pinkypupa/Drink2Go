@@ -1,0 +1,68 @@
+.milk-choice__list {
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.milk-choice__label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.milk-choice__label input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.milk-choice__label span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.milk-choice__label span::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid $basegrey;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.milk-choice__label input:not(:disabled):not(:checked)+span:hover::before {
+  background: radial-gradient(circle, rgba(120, 89, 207, 0.25) 50%, $basewhite 50%);
+  border-color: $primarylighter;
+}
+
+.milk-choice__label input:focus+span::before {
+  background: radial-gradient(circle, rgba(120, 89, 207, 0.25) 50%, $basewhite 50%);
+  border-color: $primarylighter;
+}
+
+.milk-choice__label input:not(:disabled):active+span::before {
+  background: radial-gradient(circle, $baseprimary 50%, $basewhite 50%);
+  border-color: $baseprimary;
+}
+
+.milk-choice__label input:not(:disabled):checked+span::before {
+  background: radial-gradient(circle, $baseprimary 50%, $basewhite 50%);
+  border-color: $baseprimary;
+}
+
+.milk-choice__label input:disabled:not(:checked)+span::before {
+  border-color: #e2e2e2;
+}
+
+.milk-choice__label input:disabled:checked+span::before {
+  background: radial-gradient(circle, #e2e2e2 50%, $basewhite 50%);
+  border-color: #e2e2e2;
+}

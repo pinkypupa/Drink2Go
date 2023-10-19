@@ -1,0 +1,13 @@
+.map {
+  border: none;
+  display: block;
+  position: relative;
+  height: 362px;
+  background-image: url("images/map_mobile.png");
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile-width-only) and (min-resolution: 2dppx) {
+    background-image: url("images/map_mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}

@@ -1,0 +1,22 @@
+.site-list a {
+  position: relative;
+  display: block;
+  padding: 20px 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $basewhite;
+  border: 1px solid $basesecondary;
+
+  @media (max-width: $mobile-width-only) {
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $basesecondary;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/* GLOBAL */
+@import "global/fonts.scss";
+@import "global//variables.scss";
+@import "global/global.scss";
+@import "global/link.scss";
+@import "global/list.scss";
+
+/* BLOCKS */
+@import "blocks/page.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/logo.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/order-block.scss";
+@import "blocks/page-title.scss";
+@import "blocks/page-subtitle.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantages-list.scss";
+@import "blocks/catalog.scss";
+@import "blocks/form.scss";
+@import "blocks/legend.scss";
+@import "blocks/price-range.scss";
+@import "blocks/milk-choice.scss";
+@import "blocks/produce-country.scss";
+@import "blocks/search_results.scss";
+@import "blocks/cards.scss";
+@import "blocks/item-title.scss";
+@import "blocks/price.scss";
+@import "blocks/pagination.scss";
+@import "blocks/map.scss";
+
+
+@import "global/inner-indent.scss";

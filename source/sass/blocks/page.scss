@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+  font-family: "Montserrat", "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $basewhite;
+  color: #333333;
+  margin: 0;
+}

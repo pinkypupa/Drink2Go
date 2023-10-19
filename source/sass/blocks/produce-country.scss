@@ -1,0 +1,69 @@
+.produce-country__list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.produce-country__label {
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+.produce-country__input {
+  display: none;
+}
+
+.produce-country__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $basegrey;
+  border: 2px solid $basegrey;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 40px;
+}
+
+.produce-country__slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 1px;
+  bottom: 1px;
+  background-color: $basewhite;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.produce-country__input:checked+.produce-country__slider {
+  background-color: $baseprimary;
+  border: 2px solid $baseprimary;
+}
+
+.produce-country__input:focus+.produce-country__slider {
+  background-color: rgba(120, 89, 207, 0.25);
+  border: 2px solid $primarylighter;
+}
+
+.produce-country__input:checked+.produce-country__slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+.produce-country__text {
+  margin-left: 50px;
+  min-width: 146px;
+  display: inline-block;
+}
