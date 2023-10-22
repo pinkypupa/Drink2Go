@@ -1,6 +1,34 @@
 .main-header {
+  padding: 9px 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 0;
+  }
+}
+
+.main-header__logo {
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+    padding-bottom: 17px;
+  }
+}
+
+.main-header__logo-image {
+  @media (min-width: $tablet-width) {
+    height: 36px;
+  }
+}
+
+.main-header__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 9px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 768px;
+  }
 }

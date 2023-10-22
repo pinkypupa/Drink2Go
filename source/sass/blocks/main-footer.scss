@@ -1,0 +1,29 @@
+.main-footer__caption {
+  color: $baseprimary;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.main-footer__item {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 8px 0;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.main-footer__link {
+
+  &:hover,
+  :focus {
+    color: $primarylighter;
+  }
+
+  &:active {
+    color: $primarydarker;
+  }
+}

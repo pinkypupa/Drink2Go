@@ -1,0 +1,42 @@
+.social {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid $basesecondary;
+  align-items: center;
+}
+
+.social__link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  outline: none;
+
+  &--logo {
+    width: 82px;
+    height: 36px;
+  }
+
+  & .social__logo {
+    fill: $basegrey;
+  }
+
+  &:active .social__logo {
+    fill: $baseprimary;
+  }
+
+  &:hover .social__logo {
+    fill: $primarylighter;
+  }
+
+  &:focus .social__logo {
+    fill: $primarylighter;
+  }
+}
+
+.social__icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}

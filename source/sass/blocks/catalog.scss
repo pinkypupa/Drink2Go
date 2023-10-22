@@ -3,11 +3,19 @@
   text-align: center;
   padding-top: 50px;
   padding-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 80px;
+  }
 }
 
 .catalog__subtitle {
   margin: 0;
   margin-bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+  }
 }
 
 .catalog__header {

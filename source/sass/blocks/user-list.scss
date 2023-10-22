@@ -12,6 +12,17 @@
       outline: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    position: unset;
+    align-items: center;
+  }
+}
+
+.user-list__item {
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }
 
 .user-list__login {
@@ -25,6 +36,11 @@
   span {
     display: none;
   }
+
+  @media (min-width: $tablet-width) {
+    position: unset;
+    padding: 32px 22px;
+  }
 }
 
 .user-list__cart {
@@ -37,6 +53,11 @@
 
   span {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: unset;
+    padding: 32px 22px;
   }
 }
 

@@ -15,11 +15,30 @@
   &::placeholder {
     color: $basegrey;
   }
+
+  &:focus {
+    border-color: $primarydarker;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: #E2E2E2;
+    color: $basegrey;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 10px;
+    max-width: 88px;
+  }
 }
 
 .price-range__scale {
   margin: 0;
   margin-bottom: 34px;
+
+  // @media (min-width: $tablet-width) {
+
+  // }
 }
 
 .price-range__wrapper {
@@ -39,7 +58,7 @@
 
 .price-range__from {
   @include buttonStyle();
-  // margin-right: 28px;
+
 }
 
 .price-range__to {

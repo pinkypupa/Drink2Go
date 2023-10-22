@@ -5,6 +5,10 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .order-block__button {

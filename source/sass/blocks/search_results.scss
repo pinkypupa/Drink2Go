@@ -15,4 +15,13 @@
   font-weight: 600;
   line-height: 24px;
   text-align: center;
+
+  &:hover,
+  :focus {
+    background-color: $basesecondary;
+  }
+
+  // &:active{
+    // сделать здесь стрелочку
+  // }
 }

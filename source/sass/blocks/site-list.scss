@@ -1,4 +1,20 @@
-.site-list a {
+.site-list {
+  @media(min-width:$tablet-width) {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+  }
+}
+
+.site-list__item {
+  @media(min-width: $tablet-width) {
+    &--current {
+      border-bottom: 2px solid $baseprimary;
+    }
+  }
+}
+
+.site-list__link {
   position: relative;
   display: block;
   padding: 20px 0;
@@ -16,6 +32,21 @@
     &:active,
     &:focus {
       background-color: $basesecondary;
+      outline: none;
+    }
+  }
+
+  @media(min-width: $tablet-width) {
+    border: none;
+    padding: 31px 19px;
+    font-size: 13px;
+    font-weight: 500;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $baseprimary;
+      background-color: unset;
       outline: none;
     }
   }

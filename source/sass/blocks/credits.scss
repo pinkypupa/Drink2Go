@@ -1,0 +1,24 @@
+.credits {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 30px 0;
+  color: $basegrey;
+  font-size: 12px;
+  line-height: 16px
+}
+
+.credits__description {
+  margin: 0;
+}
+
+.credits__link {
+  color: $basegrey;
+
+  &--logo {
+    width: 12px;
+    height: 16px;
+  }
+}
