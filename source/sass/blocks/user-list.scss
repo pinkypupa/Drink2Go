@@ -4,7 +4,6 @@
   position: relative;
 
   a {
-
     &:hover,
     &:active,
     &:focus {
@@ -20,6 +19,8 @@
 }
 
 .user-list__item {
+  width: min-content;
+
   @media (min-width: $tablet-width) {
     padding-top: 5px;
   }
@@ -59,8 +60,4 @@
     position: unset;
     padding: 32px 22px;
   }
-}
-
-.user-list__item {
-  width: min-content;
 }

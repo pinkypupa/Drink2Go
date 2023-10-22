@@ -1,3 +1,10 @@
+.main-footer {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+
 .main-footer__caption {
   color: $baseprimary;
   margin: 0;
@@ -32,10 +39,14 @@
 }
 
 .main-footer__link {
-
-  &:hover,
-  :focus {
+  &:hover {
     color: $primarylighter;
+    outline: none;
+  }
+
+  &:focus {
+    color: $primarylighter;
+    outline: none;
   }
 
   &:active {
@@ -49,7 +60,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-   justify-content: space-between;
+    justify-content: space-between;
     padding: 0 20px;
   }
 }

@@ -1,3 +1,18 @@
+.search-results {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+    gap: 16px;
+    margin-bottom: 25px;
+  }
+}
+
 .search-results__legend {
   margin: 0;
 }
@@ -8,7 +23,7 @@
   color: $baseprimary;
   border: none;
   outline: none;
-  background-color: $lightgrey;
+  background-color: $lightestgrey;
   padding: 6px;
   font-family: "Montserrat", "Roboto", sans-serif;
   font-size: 16px;
@@ -22,6 +37,6 @@
   }
 
   // &:active{
-    // сделать здесь стрелочку
+  // сделать здесь стрелочку
   // }
 }

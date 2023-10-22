@@ -24,5 +24,21 @@
   &--logo {
     width: 12px;
     height: 16px;
+    fill: $basegrey;
+  }
+
+  &:hover {
+    color: $baseprimary;
+    fill: $baseprimary;
+  }
+
+  &:focus {
+    color: $baseprimary;
+    fill: $baseprimary;
+  }
+
+  &:active {
+    color: $primarydarker;
+    fill: $primarydarker;
   }
 }

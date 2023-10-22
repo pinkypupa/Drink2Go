@@ -28,14 +28,20 @@
   }
 
   &:active .social__logo {
+    background-color: rgba(120, 89, 207, 0.25);
+    border-radius: 4px;
     fill: $baseprimary;
   }
 
   &:hover .social__logo {
+    background-color: $basesecondary;
+    border-radius: 4px;
     fill: $primarylighter;
   }
 
   &:focus .social__logo {
+    background-color: $basesecondary;
+    border-radius: 4px;
     fill: $primarylighter;
   }
 }

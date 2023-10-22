@@ -27,6 +27,7 @@
 
   &--arrow {
     padding: 15px;
+    fill: $baseprimary;
 
     @media (min-width: $tablet-width) {
       padding: 0;
@@ -34,25 +35,35 @@
   }
 
   &--current {
-    background-color: $lightgrey;
+    background-color: $lightestgrey;
     color: $grey;
     font-weight: 600;
   }
 
-  &:hover,
-  :focus {
+  &:hover {
     background-color: $primarylighter;
     color: $basewhite;
+    outline: none;
+    fill: $basewhite;
+  }
+
+  &:focus {
+    background-color: $primarylighter;
+    color: $basewhite;
+    outline: none;
+    fill: $basewhite;
   }
 
   &:active {
     background-color: $primarydarker;
     color: $basewhite;
+    fill: $basewhite;
   }
 
   &:disabled {
     background-color: $basegrey;
     color: $basewhite;
+    fill: $basewhite;
   }
 }
 

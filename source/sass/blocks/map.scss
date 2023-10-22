@@ -4,16 +4,14 @@
   height: 420px;
   background-image: url("../../images/map_mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (max-width: $mobile-width-only) and (min-resolution: 2dppx) {
     background-image: url("../../images/map_mobile@2x.jpg");
-    background-size: 320px auto;
   }
 
   @media (min-width: $tablet-width) {
     height: 480px;
-    background-image: url("../../images/map_tablet@2x.jpg");
-    background-size: 768px auto;
     background-image: url("../../images/map_tablet.jpg");
   }
 
