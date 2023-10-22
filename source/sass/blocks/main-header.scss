@@ -1,5 +1,5 @@
 .main-header {
-  padding: 9px 0;
+  padding: 12px 0;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -8,6 +8,8 @@
 }
 
 .main-header__logo {
+  max-height: 36px;
+
   @media (min-width: $tablet-width) {
     padding-top: 22px;
     padding-bottom: 17px;

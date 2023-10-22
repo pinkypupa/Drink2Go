@@ -5,4 +5,8 @@
   text-align: left;
   padding: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    letter-spacing: -0.25px;
+  }
 }

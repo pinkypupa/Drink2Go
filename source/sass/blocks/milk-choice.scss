@@ -2,12 +2,16 @@
   display: flex;
   gap: 14px;
   flex-direction: column;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .milk-choice__label {
   font-size: 16px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 16px;
+  }
 }
 
 .milk-choice__label input {
@@ -33,6 +37,7 @@
   border: 2px solid $basegrey;
   border-radius: 50%;
   margin-right: 0.5em;
+  background-color: $basewhite;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;

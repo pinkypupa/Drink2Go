@@ -1,6 +1,12 @@
 .contacts {
   padding: 20px 0;
   border-bottom: 1px solid $basesecondary;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: unset;
+    max-width: 223px;
+    padding: 0;
+  }
 }
 
 .contacts__caption {
@@ -13,6 +19,14 @@
   position: relative;
   margin: 0;
   margin-bottom: 16px;
+}
+
+.contacts__address-wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .contacts__phone {

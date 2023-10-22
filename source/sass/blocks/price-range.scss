@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 8px 10px;
+    padding: 6px 10px;
     max-width: 88px;
   }
 }
@@ -36,9 +36,9 @@
   margin: 0;
   margin-bottom: 34px;
 
-  // @media (min-width: $tablet-width) {
-
-  // }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .price-range__wrapper {
@@ -49,11 +49,19 @@
     width: 8px;
     border-bottom: 2px solid $basegrey;
     margin: 4px 14px;
+
+    @media (min-width: $tablet-width) {
+      margin: 4px 16px;
+    }
   }
 }
 
 .price-range__legend {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .price-range__from {

@@ -2,11 +2,15 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
 }
 
 .pagination__item {
   min-width: 40px;
-  height: 40px;
+  max-height: 40px;
   background-color: $basewhite;
   border-radius: 4px;
 }
@@ -23,6 +27,10 @@
 
   &--arrow {
     padding: 15px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 
   &--current {
@@ -45,5 +53,27 @@
   &:disabled {
     background-color: $basegrey;
     color: $basewhite;
+  }
+}
+
+.pagination__back {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__next {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.pagination__text {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
   }
 }

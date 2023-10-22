@@ -5,6 +5,11 @@
   justify-content: space-between;
   border-bottom: 1px solid $basesecondary;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: unset;
+    padding: 40px 20px 28px;
+  }
 }
 
 .social__link {

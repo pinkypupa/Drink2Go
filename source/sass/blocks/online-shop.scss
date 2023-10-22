@@ -1,4 +1,11 @@
 .online-shop {
   padding: 20px 0;
   border-bottom: 1px solid $basesecondary;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: unset;
+    max-width: 223px;
+    padding: 0;
+    margin-right: 35px;
+  }
 }

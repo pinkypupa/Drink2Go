@@ -120,10 +120,10 @@
   position: absolute;
   top: 49%;
   left: 20%;
+  transform: translateY(-20%);
 
   @media (min-width:$tablet-width) {
     padding: 4px;
-    top: 48%;
     left: 38%;
   }
 }
@@ -159,10 +159,10 @@
   position: absolute;
   top: 49%;
   right: 25%;
+  transform: translateY(-20%);
 
   @media (min-width:$tablet-width) {
     padding: 4px;
-    top: 48%;
     right: 38%;
   }
 }
