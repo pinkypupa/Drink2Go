@@ -26,4 +26,3 @@ valueFrom.addEventListener('change', function () {
 valueTo.addEventListener('change', function () {
   sliderElement.noUiSlider.set([null, this.value]);
 });
-

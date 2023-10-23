@@ -30,7 +30,7 @@ export function lintBem() {
 export function processStyles() {
   return gulp.src('source/sass/*.scss', { sourcemaps: isDevelopment })
     .pipe(plumber())
-    // .pipe(sass().on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(sass())
     .pipe(postcss([
       postUrl({ assetsPath: '../' }),

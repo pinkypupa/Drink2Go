@@ -85,15 +85,6 @@
   background-color: $basegrey;
 }
 
-// .produce-country__input:disabled:not(:checked)+.produce-country__text {
-//   color: red;
-// }
-
-.produce-country__input:disabled:not(:checked) + .produce-country__text {
-  color: red;
-}
-  // color: $basegrey;
-
 .produce-country__text {
   margin-left: 50px;
   min-width: 146px;

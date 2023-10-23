@@ -16,7 +16,10 @@
   border: none;
   padding: 22px;
 
-  &:hover,
+  &:hover {
+    background-color: $basesecondary;
+  }
+
   &:active {
     background-color: $basesecondary;
   }
@@ -64,6 +67,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+
   &::before,
   &::after {
     content: "";
