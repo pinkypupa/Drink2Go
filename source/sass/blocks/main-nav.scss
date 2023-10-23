@@ -88,8 +88,13 @@
 .main-nav__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     min-width: 580px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 800px;
   }
 }

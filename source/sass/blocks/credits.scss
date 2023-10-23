@@ -20,25 +20,38 @@
 
 .credits__link {
   color: $basegrey;
+  align-items: center;
+  display: flex;
+  gap: 4px;
 
   &--logo {
     width: 12px;
     height: 16px;
     fill: $basegrey;
+    transform: translateY(4%);
   }
 
   &:hover {
     color: $baseprimary;
-    fill: $baseprimary;
+
+    & svg {
+      fill: $baseprimary;
+    }
   }
 
   &:focus {
     color: $baseprimary;
-    fill: $baseprimary;
+
+    & svg {
+      fill: $baseprimary;
+    }
   }
 
   &:active {
     color: $primarydarker;
-    fill: $primarydarker;
+
+    & svg {
+      fill: $primarydarker;
+    }
   }
 }

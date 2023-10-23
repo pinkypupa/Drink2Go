@@ -8,8 +8,14 @@
 }
 
 .page__body {
-  min-height: 100%;
+  height: 100%;
   margin: 0;
   background-color: $basewhite;
   color: #333333;
+}
+
+.page__container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
